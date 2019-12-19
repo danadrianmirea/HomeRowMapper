@@ -74,4 +74,4 @@ Capslock & c:: Send %  GetKeyState("Ralt","P") ? "{<}" : "{,}"
 Capslock & v:: Send %  GetKeyState("Ralt","P") ? "{>}" : "{.}"
 Capslock & b:: Send {PgUp}
 Capslock & n:: Send {Enter}
-; m not bound
+Capslock & m:: Send {ALT DOWN}{TAB}{ALT UP}
