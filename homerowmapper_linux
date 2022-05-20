@@ -1,0 +1,61 @@
+! this is the linux version of the homerowmapper, using xmodmap
+! to use it simply copy it to your home dir and put the command "xmodmap homerowmapper_linux" in your .profile file
+
+! set caps lock to function as Mode_switch
+clear lock
+keycode 66 = Mode_switch
+
+! first the full remaps of modifier keys
+keycode 108 = Shift_L Shift_L Shift_L Shift_L
+
+! TODO: swapping Control_L and Super_L as done below doesnt seem to work
+keycode 133 = Control_L NoSymbol Control_L
+keycode  37 = Super_L NoSymbol Super_L
+
+! function keys to number keys
+keycode 10 = 1 exclam             F1 F1
+keycode 11 = 2 at                 F2 F2
+keycode 12 = 3 numbersign         F3 F3
+keycode 13 = 4 dollar             F4 F4
+keycode 14 = 5 percent            F5 F5
+keycode 15 = 6 asciicircum        F6 F6
+keycode 16 = 7 ampersand          F7 F7
+keycode 17 = 8 asterisk           F8 F8
+keycode 18 = 9 parenleft          F9 F9
+keycode 19 = 0 parenright         F10 F10
+keycode 20 = minus underscore F11 F11
+keycode 21 = equal plus       F12 F12
+
+! qwertyuiop remapping area
+keycode  24 = q Q bracketleft braceleft
+keycode  25 = w W bracketright braceright
+keycode  26 = e E semicolon colon
+keycode  27 = r R r R
+keycode  28 = t T t T
+keycode  29 = y Y equal plus
+keycode  30 = u U backslash bar
+keycode  31 = i I i I
+keycode  32 = o O Home Home
+keycode  33 = p P End End
+keycode  34 = bracketleft braceleft Escape Escape
+keycode  35 = bracketright braceright bracketright braceright
+
+! asdfghjkl remapping area
+keycode  38 = a A a A
+keycode  39 = s S slash question
+keycode  40 = d D apostrophe quotedbl
+keycode  41 = f F minus underscore
+keycode  42 = g G Next Next
+keycode  43 = h H Left Left
+keycode  44 = j J Down Down
+keycode  45 = k K Up Up
+keycode  46 = l L Right Right
+
+! zxcvbnm area
+keycode  52 = z Z BackSpace BackSpace
+keycode  53 = x X Delete Delete
+keycode  54 = c C comma less
+keycode  55 = v V period greater
+keycode  56 = b B Prior Prior
+keycode  57 = n N Return Return
+keycode  58 = m M m M
