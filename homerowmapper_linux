@@ -9,8 +9,8 @@ keycode 66 = Mode_switch
 keycode 108 = Shift_L Shift_L Shift_L Shift_L
 
 ! TODO: swapping Control_L and Super_L as done below doesnt seem to work
-keycode 133 = Control_L NoSymbol Control_L
-keycode  37 = Super_L NoSymbol Super_L
+! keycode 133 = Control_L NoSymbol Control_L
+! keycode  37 = Super_L NoSymbol Super_L
 
 ! function keys to number keys
 keycode 10 = 1 exclam             F1 F1
