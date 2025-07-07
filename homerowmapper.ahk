@@ -1,5 +1,7 @@
 #SingleInstance Force
+SetStoreCapsLockMode, Off
 SetCapsLockState, alwaysoff
+CapsLock::Return
 
 ; others
 RControl::Suspend	
@@ -34,7 +36,7 @@ Capslock & w:: Send %  GetKeyState("Ralt","P") ? "{}}" : "{]}"
 Capslock & e:: Send %  GetKeyState("Ralt","P") ? "{:}" : "{;}"
 ; r not bound
 ; t not bound 
-Capslock & y::Send %  GetKeyState("Ralt","P") ? "{+}" : "{=}"
+Capslock & y::Send %  GetKeyState("Alt","P") ? "{+}" : "{=}"
 Capslock & u::Send %  GetKeyState("Ralt","P") ? "{|}" : "{\}"
 ; i not bound 
 
